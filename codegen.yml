@@ -1,0 +1,9 @@
+schema: http://152.228.215.94:83/api
+generates:
+  src/generated/types.ts:
+    documents: src/**/*.graphql.ts
+    plugins:
+      - typescript
+      - typescript-operations
+      - typescript-react-apollo
+      - typescript-resolvers
